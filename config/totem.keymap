@@ -92,8 +92,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <200>;
         };
 
         rgui_1_f1: rgui_1_f1 {
@@ -109,6 +109,96 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RGUI_2_F2";
             bindings = <&kp NUMBER_2>, <&kp F2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_3_f3: rgui_3_f3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_3_F3";
+            bindings = <&kp NUMBER_3>, <&kp F3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_4_f4: rgui_4_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_4_F4";
+            bindings = <&kp NUMBER_4>, <&kp F4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_5_f5: rgui_5_f5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_5_F5";
+            bindings = <&kp NUMBER_5>, <&kp F5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_6_f6: rgui_6_f6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_6_F6";
+            bindings = <&kp NUMBER_6>, <&kp F6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_7_f7: rgui_7_f7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_7_F7";
+            bindings = <&kp NUMBER_7>, <&kp F7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_8_f8: rgui_8_f8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_8_F8";
+            bindings = <&kp NUMBER_8>, <&kp F8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_9_f9: rgui_9_f9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_9_F9";
+            bindings = <&kp NUMBER_9>, <&kp F9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_10_f10: rgui_10_f10 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_10_F10";
+            bindings = <&kp MINUS>, <&kp F10>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_11_f11: rgui_11_f11 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_11_F11";
+            bindings = <&kp PLUS>, <&kp F11>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RGUI)>;
+        };
+
+        rgui_12_f12: rgui_12_f12 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RGUI_12_F12";
+            bindings = <&kp ASTERISK>, <&kp F12>;
 
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
@@ -129,19 +219,19 @@
 
         nav_num {
             bindings = <
-                   &kp RC(BACKSPACE)   &kp BACKSPACE  &kp UP     &kp DELETE     &kp LC(DELETE)    &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BACKSPACE
-                   &kp LA(LEFT_ARROW)  &kp LEFT       &kp DOWN   &kp RIGHT      &kp LA(RIGHT)     &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD
-&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LG(LEFT)   &kp ENTER  &kp LG(RIGHT)  &kp RIGHT_GUI     &kp MINUS     &rgui_1_f1    &rgui_2_f2    &kp NUMBER_3  &kp COMMA      &kp NON_US_BACKSLASH
+                   &kp RC(BACKSPACE)   &kp BACKSPACE  &kp UP     &kp DELETE     &kp LC(DELETE)    &rgui_12_f12  &rgui_7_f7    &rgui_8_f8  &rgui_9_f9  &kp BACKSPACE
+                   &kp LA(LEFT_ARROW)  &kp LEFT       &kp DOWN   &kp RIGHT      &kp LA(RIGHT)     &rgui_11_f11  &rgui_4_f4    &rgui_5_f5  &rgui_6_f6  &kp PERIOD
+&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LG(LEFT)   &kp ENTER  &kp LG(RIGHT)  &kp RIGHT_GUI     &rgui_10_f10  &rgui_1_f1    &rgui_2_f2  &rgui_3_f3  &kp COMMA      &kp NON_US_BACKSLASH
                                                       &trans     &trans         &trans            &kp EQUAL     &kp NUMBER_0  &kp SLASH
             >;
         };
 
         sym_func {
             bindings = <
-       &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none        &kp F12  &kp F7  &kp F8  &kp F9  &none
-       &mkp LCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK    &kp F11  &kp F4  &kp F5  &kp F6  &none
-&none  &none      &none           &none           &none            &none        &kp F10  &kp F1  &kp F2  &kp F3  &none  &none
-                                  &trans          &trans           &trans       &none    &none   &none
+       &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none        &none     &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &none
+       &mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
+&none  &none      &none           &none           &none            &none        &none     &none           &none         &none          &none    &none
+                                  &trans          &trans           &trans       &none     &kp LEFT_SHIFT  &none
             >;
         };
 
