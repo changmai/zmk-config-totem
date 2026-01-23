@@ -19,7 +19,7 @@
     combos {
         compatible = "zmk,combos";
 
-        ENTER-JKL {
+        enterjkl {
             bindings = <&kp ENTER>;
             key-positions = <16 17 18>;
         };
@@ -44,32 +44,32 @@
             key-positions = <11 12 13>;
         };
 
-        LEFT-BRAKET {
+        leftbraket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <6 7>;
         };
 
-        RIGHT-BRAKET {
+        rightbraket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <8 7>;
         };
 
-        LEFT-PAREN {
+        leftparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <16 17>;
         };
 
-        RIGHT-PAREN {
+        rightparen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <17 18>;
         };
 
-        LEFT-BRACE {
+        leftbrace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <27 28>;
         };
 
-        RIGHT-BRACE {
+        rightbrace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <28 29>;
         };
