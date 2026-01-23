@@ -14,6 +14,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+// 마우스 이동 속도 (기본값: 600)
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000    // 더 빠르게
+
+// 스크롤 속도 (기본값: 10)
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30      // 더 빠르게
+
 
 / {
     combos {
@@ -112,7 +118,7 @@
 
         sym_func {
             bindings = <
-       &none      &mmv MOVE_Y(100)  &mmv MOVE_UP    &mmv MOVE_Y(-100)  &none        &kp F12  &kp F7  &kp F8  &kp F9  &none
+       &none      &msc SCRL_UP  &mmv MOVE_UP    &msc SCRL_DOWN  &none        &kp F12  &kp F7  &kp F8  &kp F9  &none
        &mkp LCLK  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mkp RCLK    &kp F11  &kp F4  &kp F5  &kp F6  &none
 &none  &none      &none             &none           &none              &none        &kp F10  &kp F1  &kp F2  &kp F3  &none  &none
                                     &trans          &trans             &trans       &none    &none   &none
