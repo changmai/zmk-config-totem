@@ -86,6 +86,91 @@
             bindings = <&kp RIGHT_ALT>;
             key-positions = <16 18>;
         };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <13 16>;
+        };
+
+        atsign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <11 1>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <2 12>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <13 3>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <14 4>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <15 5>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <16 6>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <17 7>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <18 8>;
+        };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <22 11>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <23 12>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <24 13>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <25 14>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <26 15>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <27 16>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <28 17>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <18 29>;
+        };
     };
 
     behaviors {
@@ -95,118 +180,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             flavor = "tap-preferred";
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <200>;
-        };
-
-        rgui_1_f1: rgui_1_f1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_1_F1";
-            bindings = <&kp NUMBER_1>, <&kp F1>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_2_f2: rgui_2_f2 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_2_F2";
-            bindings = <&kp NUMBER_2>, <&kp F2>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_3_f3: rgui_3_f3 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_3_F3";
-            bindings = <&kp NUMBER_3>, <&kp F3>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_4_f4: rgui_4_f4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_4_F4";
-            bindings = <&kp NUMBER_4>, <&kp F4>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_5_f5: rgui_5_f5 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_5_F5";
-            bindings = <&kp NUMBER_5>, <&kp F5>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_6_f6: rgui_6_f6 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_6_F6";
-            bindings = <&kp NUMBER_6>, <&kp F6>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_7_f7: rgui_7_f7 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_7_F7";
-            bindings = <&kp NUMBER_7>, <&kp F7>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_8_f8: rgui_8_f8 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_8_F8";
-            bindings = <&kp NUMBER_8>, <&kp F8>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_9_f9: rgui_9_f9 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_9_F9";
-            bindings = <&kp NUMBER_9>, <&kp F9>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_10_f10: rgui_10_f10 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_10_F10";
-            bindings = <&kp MINUS>, <&kp F10>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_11_f11: rgui_11_f11 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_11_F11";
-            bindings = <&kp PLUS>, <&kp F11>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
-        };
-
-        rgui_12_f12: rgui_12_f12 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "RGUI_12_F12";
-            bindings = <&kp ASTERISK>, <&kp F12>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_RGUI)>;
+            quick-tap-ms = <300>;
+            require-prior-idle-ms = <300>;
         };
 
         tap_preferred_mo: tap_preferred_mo {
@@ -229,42 +206,51 @@
             bindings = <
                            &kp Q                      &kp W                      &kp E                          &kp R                        &kp T    &kp Y      &kp U                    &kp I                          &kp O                      &kp P
                            &tap_preferred LEFT_GUI A  &tap_preferred LEFT_ALT S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_SHIFT F  &kp G    &kp H      &tap_preferred LSHIFT J  &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_ALT L  &tap_preferred LEFT_GUI SEMICOLON
-&tap_preferred_mo 4 GRAVE  &kp Z                      &kp X                      &kp C                          &kp V                        &kp B    &kp N      &kp M                    &kp COMMA                      &kp DOT                    &kp FSLH                           &kp APOS
-                                                                                 &kp LEFT_COMMAND               &mo 2                        &mo 1    &kp SPACE  &tap_preferred_mo 2 TAB  &kp RIGHT_ALT
+&tap_preferred_mo 5 GRAVE  &kp Z                      &kp X                      &kp C                          &kp V                        &kp B    &kp N      &kp M                    &kp COMMA                      &kp DOT                    &kp FSLH                           &tap_preferred_mo 2 SQT
+                                                                                 &kp LEFT_COMMAND               &mo 2                        &mo 1    &kp SPACE  &kp BACKSPACE            &tap_preferred_mo 3 DELETE
             >;
         };
 
         nav_num {
             bindings = <
-       &none  &none  &none   &none   &none            &rgui_12_f12  &rgui_7_f7    &rgui_8_f8  &rgui_9_f9  &kp BACKSPACE
-       &none  &none  &none   &none   &none            &rgui_11_f11  &rgui_4_f4    &rgui_5_f5  &rgui_6_f6  &kp PERIOD
-&none  &none  &none  &none   &none   &kp RIGHT_GUI    &rgui_10_f10  &rgui_1_f1    &rgui_2_f2  &rgui_3_f3  &kp COMMA      &kp NON_US_BACKSLASH
-                     &trans  &trans  &trans           &kp EQUAL     &kp NUMBER_0  &kp SLASH
+       &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp DOLLAR  &kp PERCENT       &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp BACKSPACE
+       &kp CARET        &kp AMPERSAND  &kp BACKSLASH  &kp TILDE   &kp UNDERSCORE    &kp PLUS      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD
+&none  &none            &none          &kp PIPE       &none       &none             &kp MINUS     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA      &trans
+                                       &trans         &trans      &trans            &kp EQUAL     &kp NUMBER_0  &kp SLASH
             >;
         };
 
         nav_ {
             bindings = <
-       &none     &kp PAGE_UP     &kp UP    &kp PAGE_DOWN  &none      &mkp MB5        &kp PAGE_UP     &mmv MOVE_UP    &kp PAGE_DOWN    &none
-       &kp HOME  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT      &kp END    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&none  &none     &none           &none     &none          &none      &mkp MB4        &msc SCRL_UP    &mkp MCLK       &msc SCRL_DOWN   &none            &none
-                                 &trans    &trans         &trans     &none           &kp LEFT_SHIFT  &none
+       &kp LC(BACKSPACE)  &kp BACKSPACE   &kp UP     &kp DELETE     &kp LC(DELETE)    &mkp MB5        &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &none
+       &kp HOME           &kp LEFT_ARROW  &kp DOWN   &kp RIGHT      &kp END           &msc SCRL_LEFT  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&none  &none              &kp PAGE_UP     &kp ENTER  &kp PAGE_DOWN  &none             &mkp MB4        &msc SCRL_UP      &mkp MCLK       &msc SCRL_DOWN   &none            &none
+                                          &trans     &trans         &trans            &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT
+            >;
+        };
+
+        fun {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &kp F12  &kp F7  &kp F8  &kp F9  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F4  &kp F5  &kp F6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans
+                        &trans  &trans  &trans    &trans   &trans  &trans
             >;
         };
 
         device {
             bindings = <
-       &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none             &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_PLAY_PAUSE  &none    &none         &none         &none         &none         &none
-&none  &none       &none                 &none                 &none             &none    &none         &none         &none         &none         &none         &bt BT_CLR
-                                         &none                 &none             &none    &none         &none         &none
+       &none  &none       &kp C_BRI_DN       &kp C_BRI_UP     &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+       &none  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &none         &none         &none         &none         &none
+&none  &none  &none       &kp C_PLAY_PAUSE   &none            &none    &none         &none         &none         &none         &none         &bt BT_CLR
+                          &none              &none            &none    &none         &none         &none
             >;
         };
 
         game {
             bindings = <
        &none  &none  &none  &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &none  &none  &none  &none  &to 5    &none         &none         &none         &none         &none
+       &none  &none  &none  &none  &to 6    &none         &none         &none         &none         &none
 &none  &none  &none  &none  &none  &none    &none         &none         &none         &none         &none         &bt BT_CLR
                      &none  &none  &none    &none         &none         &none
             >;
@@ -285,7 +271,7 @@
 
         device {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <4>;
         };
     };
 };
