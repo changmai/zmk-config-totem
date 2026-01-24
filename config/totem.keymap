@@ -17,11 +17,11 @@
 
 // 마우스 이동 속도 (기본값: 600)
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000    // 더 빠르게
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 700    // 더 빠르게
 
 // 스크롤 속도 (기본값: 10)
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 30      // 더 빠르게
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15      // 더 빠르게
 
 / {
     combos {
