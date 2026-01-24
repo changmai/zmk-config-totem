@@ -203,6 +203,18 @@
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
         };
+
+        tap_preferred_mo: tap_preferred_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_PREFERRED_MO";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <200>;
+        };
     };
 
     keymap {
@@ -210,28 +222,28 @@
 
         base {
             bindings = <
-           &kp Q                          &kp W                      &kp E                      &kp R                        &kp T    &kp Y      &kp U                    &kp I                      &kp O                      &kp P
-           &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_ALT S  &tap_preferred LEFT_GUI D  &tap_preferred LEFT_SHIFT F  &kp G    &kp H      &tap_preferred LSHIFT J  &tap_preferred LEFT_GUI K  &tap_preferred LEFT_ALT L  &tap_preferred LEFT_CONTROL SEMICOLON
-&kp GRAVE  &kp Z                          &kp X                      &kp C                      &kp V                        &kp B    &kp N      &kp M                    &kp COMMA                  &kp DOT                    &kp FSLH                               &kp APOS
-                                                                     &kp LGUI                   &mo 2                        &mo 1    &kp SPACE  &kp TAB                  &kp RIGHT_ALT
+                           &kp Q                      &kp W                      &kp E                          &kp R                        &kp T    &kp Y      &kp U                    &kp I                          &kp O                      &kp P
+                           &tap_preferred LEFT_GUI A  &tap_preferred LEFT_ALT S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_SHIFT F  &kp G    &kp H      &tap_preferred LSHIFT J  &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_ALT L  &tap_preferred LEFT_GUI SEMICOLON
+&tap_preferred_mo 4 GRAVE  &kp Z                      &kp X                      &kp C                          &kp V                        &kp B    &kp N      &kp M                    &kp COMMA                      &kp DOT                    &kp FSLH                           &kp APOS
+                                                                                 &kp LEFT_COMMAND               &mo 2                        &mo 1    &kp SPACE  &tap_preferred_mo 2 TAB  &kp RIGHT_ALT
             >;
         };
 
         nav_num {
             bindings = <
-                   &kp RC(BACKSPACE)   &kp BACKSPACE  &kp UP     &kp DELETE     &kp LC(DELETE)    &rgui_12_f12  &rgui_7_f7    &rgui_8_f8  &rgui_9_f9  &kp BACKSPACE
-                   &kp LA(LEFT_ARROW)  &kp LEFT       &kp DOWN   &kp RIGHT      &kp LA(RIGHT)     &rgui_11_f11  &rgui_4_f4    &rgui_5_f5  &rgui_6_f6  &kp PERIOD
-&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LG(LEFT)   &kp ENTER  &kp LG(RIGHT)  &kp RIGHT_GUI     &rgui_10_f10  &rgui_1_f1    &rgui_2_f2  &rgui_3_f3  &kp COMMA      &kp NON_US_BACKSLASH
-                                                      &trans     &trans         &trans            &kp EQUAL     &kp NUMBER_0  &kp SLASH
+       &none  &none  &none   &none   &none            &rgui_12_f12  &rgui_7_f7    &rgui_8_f8  &rgui_9_f9  &kp BACKSPACE
+       &none  &none  &none   &none   &none            &rgui_11_f11  &rgui_4_f4    &rgui_5_f5  &rgui_6_f6  &kp PERIOD
+&none  &none  &none  &none   &none   &kp RIGHT_GUI    &rgui_10_f10  &rgui_1_f1    &rgui_2_f2  &rgui_3_f3  &kp COMMA      &kp NON_US_BACKSLASH
+                     &trans  &trans  &trans           &kp EQUAL     &kp NUMBER_0  &kp SLASH
             >;
         };
 
-        sym_func {
+        nav_ {
             bindings = <
-       &none      &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &none        &none     &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &none
-       &mkp RCLK  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp LCLK    &kp HOME  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
-&none  &none      &none           &none           &none            &none        &none     &none           &none         &none          &none    &none
-                                  &trans          &trans           &trans       &none     &kp LEFT_SHIFT  &none
+       &none     &kp PAGE_UP     &kp UP    &kp PAGE_DOWN  &none      &mkp MB5        &kp PAGE_UP     &mmv MOVE_UP    &kp PAGE_DOWN    &none
+       &kp HOME  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT      &kp END    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&none  &none     &none           &none     &none          &none      &mkp MB4        &msc SCRL_UP    &mkp MCLK       &msc SCRL_DOWN   &none            &none
+                                 &trans    &trans         &trans     &none           &kp LEFT_SHIFT  &none
             >;
         };
 
