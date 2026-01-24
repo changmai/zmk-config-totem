@@ -82,14 +82,14 @@
             key-positions = <28 29>;
         };
 
-        rightalt {
-            bindings = <&kp RIGHT_ALT>;
+        ctrlspace {
+            bindings = <&kp LC(SPACE)>;
             key-positions = <16 18>;
         };
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <13 11>;
+            key-positions = <6 8>;
         };
 
         atsign {
@@ -170,6 +170,11 @@
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <18 29>;
+        };
+
+        rightalt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <27 29>;
         };
     };
 
