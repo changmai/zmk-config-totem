@@ -89,7 +89,7 @@
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <13 16>;
+            key-positions = <13 11>;
         };
 
         atsign {
