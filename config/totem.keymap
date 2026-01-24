@@ -81,6 +81,11 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <28 29>;
         };
+
+        rightalt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <16 18>;
+        };
     };
 
     behaviors {
