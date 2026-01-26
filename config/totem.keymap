@@ -209,10 +209,10 @@
 
         base {
             bindings = <
-                           &tap_preferred LS(Q) Q       &tap_preferred LS(W) W     &tap_preferred LS(E) E         &tap_preferred LS(R) R     &tap_preferred LS(T) T     &kp Y      &kp U                          &kp I                          &tap_preferred LS(O) O     &tap_preferred LS(P) P
-                           &tap_preferred LEFT_SHIFT A  &tap_preferred LEFT_ALT S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_GUI F  &kp G                      &kp H      &tap_preferred LEFT_GUI J      &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_ALT L  &tap_preferred LSHIFT SEMICOLON
-&tap_preferred_mo 5 GRAVE  &kp Z                        &kp X                      &kp C                          &kp V                      &kp B                      &kp N      &kp M                          &kp COMMA                      &kp DOT                    &kp SLASH                        &tap_preferred_mo 2 SQT
-                                                                                   &kp RIGHT_GUI                  &mo 2                      &tap_preferred_mo 1 TAB    &kp SPACE  &tap_preferred_mo 3 BACKSPACE  &kp LEFT_SHIFT
+                           &tap_preferred LS(Q) Q       &tap_preferred LS(W) W     &tap_preferred LS(E) E         &tap_preferred LS(R) R     &tap_preferred LS(T) T     &kp Y                          &kp U                      &kp I                          &tap_preferred LS(O) O     &tap_preferred LS(P) P
+                           &tap_preferred LEFT_SHIFT A  &tap_preferred LEFT_ALT S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_GUI F  &kp G                      &kp H                          &tap_preferred LEFT_GUI J  &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_ALT L  &tap_preferred LSHIFT SEMICOLON
+&tap_preferred_mo 5 GRAVE  &kp Z                        &kp X                      &kp C                          &kp V                      &kp B                      &kp N                          &kp M                      &kp COMMA                      &kp DOT                    &kp SLASH                        &kp RIGHT_SHIFT
+                                                                                   &kp RIGHT_GUI                  &mo 2                      &tap_preferred_mo 1 TAB    &tap_preferred_mo 2 BACKSPACE  &kp SPACE                  &tap_preferred_mo 3 SQT
             >;
         };
 
@@ -230,7 +230,7 @@
        &kp LC(BACKSPACE)  &kp BACKSPACE   &kp UP     &kp DELETE  &kp LC(DELETE)    &mkp MB5        &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &none
        &kp LSHIFT         &kp LEFT_ARROW  &kp DOWN   &kp RIGHT   &kp PAGE_UP       &msc SCRL_LEFT  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
 &none  &none              &kp HOME        &kp ENTER  &kp END     &kp PAGE_DOWN     &mkp MB4        &msc SCRL_UP      &mkp MCLK       &msc SCRL_DOWN   &none            &none
-                                          &trans     &trans      &trans            &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT
+                                          &trans     &trans      &trans            &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans
             >;
         };
 
