@@ -218,9 +218,9 @@
 
         sym_num {
             bindings = <
-                &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR      &kp NON_US_BACKSLASH    &kp SLASH      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-                &kp PERCENT      &kp CARET    &kp AMPERSAND  &kp TILDE       &kp BACKSLASH           &kp ASTERISK   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&kp LEFT_SHIFT  &none            &none        &kp ENTER      &kp UNDERSCORE  &kp BSLH                &kp EQUAL      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp PERIOD
+                &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR      &kp PIPE                &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+                &kp PERCENT      &kp CARET    &kp AMPERSAND  &kp TILDE       &kp BACKSLASH           &kp SLASH      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&kp LEFT_SHIFT  &none            &none        &kp ENTER      &kp UNDERSCORE  &kp NON_US_BACKSLASH    &kp EQUAL      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp PERIOD
                                               &trans         &trans          &trans                  &kp BACKSPACE  &trans        &kp NUMBER_0
             >;
         };
