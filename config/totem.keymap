@@ -209,10 +209,10 @@
 
         base {
             bindings = <
-                           &tap_preferred LS(Q) Q       &tap_preferred LS(W) W     &tap_preferred LS(E) E         &tap_preferred LS(R) R     &tap_preferred LS(T) T     &kp Y                          &kp U                      &kp I                          &tap_preferred LS(O) O     &tap_preferred LS(P) P
-                           &tap_preferred LEFT_SHIFT A  &tap_preferred LEFT_ALT S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_GUI F  &kp G                      &kp H                          &tap_preferred LEFT_GUI J  &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_ALT L  &tap_preferred LSHIFT SEMICOLON
-&tap_preferred_mo 5 GRAVE  &kp Z                        &kp X                      &kp C                          &kp V                      &kp B                      &kp N                          &kp M                      &kp COMMA                      &kp DOT                    &kp SLASH                        &kp RIGHT_SHIFT
-                                                                                   &kp RIGHT_GUI                  &mo 2                      &tap_preferred_mo 1 TAB    &tap_preferred_mo 2 BACKSPACE  &kp SPACE                  &tap_preferred_mo 3 SQT
+                           &tap_preferred LS(Q) Q     &tap_preferred LS(W) W       &tap_preferred LS(E) E     &tap_preferred LS(R) R         &tap_preferred LS(T) T     &kp Y                          &kp U                          &kp I                      &tap_preferred LS(O) O       &tap_preferred LS(P) P
+                           &tap_preferred LEFT_GUI A  &tap_preferred LEFT_SHIFT S  &tap_preferred LEFT_ALT D  &tap_preferred LEFT_CONTROL F  &kp G                      &kp H                          &tap_preferred LEFT_CONTROL J  &tap_preferred LEFT_ALT K  &tap_preferred LEFT_SHIFT L  &tap_preferred LEFT_GUI SEMICOLON
+&tap_preferred_mo 5 GRAVE  &kp Z                      &kp X                        &kp C                      &kp V                          &kp B                      &kp N                          &kp M                          &kp COMMA                  &kp DOT                      &kp SLASH                          &kp RIGHT_SHIFT
+                                                                                   &kp RIGHT_GUI              &mo 2                          &tap_preferred_mo 1 TAB    &tap_preferred_mo 2 BACKSPACE  &kp SPACE                      &tap_preferred_mo 3 SQT
             >;
         };
 
