@@ -209,10 +209,10 @@
 
         base {
             bindings = <
-                           &tap_preferred LS(Q) Q     &tap_preferred LS(W) W       &tap_preferred LS(E) E     &tap_preferred LS(R) R         &tap_preferred LS(T) T     &kp Y                          &kp U                          &kp I                      &tap_preferred LS(O) O       &tap_preferred LS(P) P
-                           &tap_preferred LEFT_GUI A  &tap_preferred LEFT_SHIFT S  &tap_preferred LEFT_ALT D  &tap_preferred LEFT_CONTROL F  &kp G                      &kp H                          &tap_preferred LEFT_CONTROL J  &tap_preferred LEFT_ALT K  &tap_preferred LEFT_SHIFT L  &tap_preferred LEFT_GUI SEMICOLON
-&tap_preferred_mo 5 GRAVE  &kp Z                      &kp X                        &kp C                      &kp V                          &kp B                      &kp N                          &kp M                          &kp COMMA                  &kp DOT                      &kp SLASH                          &kp RIGHT_SHIFT
-                                                                                   &kp LEFT_GUI               &mo 1                          &tap_preferred_mo 2 TAB    &tap_preferred_mo 2 BACKSPACE  &kp SPACE                      &tap_preferred_mo 3 SQT
+                           &tap_preferred LS(Q) Q   &tap_preferred LS(W) W     &tap_preferred LS(E) E         &tap_preferred LS(R) R     &tap_preferred LS(T) T     &kp Y                          &kp U                      &kp I                          &tap_preferred LS(O) O     &tap_preferred LS(P) P
+                           &tap_preferred LSHIFT A  &tap_preferred LEFT_GUI S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_ALT F  &kp G                      &kp H                          &tap_preferred LEFT_ALT J  &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_GUI L  &tap_preferred LSHIFT SEMICOLON
+&tap_preferred_mo 5 GRAVE  &kp Z                    &kp X                      &kp C                          &kp V                      &kp B                      &kp N                          &kp M                      &kp COMMA                      &kp DOT                    &kp SLASH                        &kp RIGHT_SHIFT
+                                                                               &kp LEFT_GUI                   &mo 1                      &tap_preferred_mo 2 TAB    &tap_preferred_mo 2 BACKSPACE  &kp SPACE                  &tap_preferred_mo 3 SQT
             >;
         };
 
@@ -263,10 +263,10 @@
 
         game_enter {
             bindings = <
-       &none           &kp Q  &kp W  &kp E  &kp R    &none  &none  &none  &none  &none
-       &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F    &none  &none  &none  &none  &none
-&to 0  &kp Z           &kp X  &kp C  &kp V  &kp B    &none  &none  &none  &none  &none  &none
-                              &none  &none  &none    &none  &none  &none
+       &none           &kp Q  &kp W  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
+       &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
+&to 0  &kp Z           &kp X  &kp C  &kp V  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
+                              &none  &none  &kp SPACE    &none   &none   &none
             >;
         };
     };
