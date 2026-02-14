@@ -227,7 +227,7 @@
 
         nav_mouse {
             bindings = <
-        &kp LC(BACKSPACE)  &kp BACKSPACE   &kp UP     &kp DELETE  &kp LC(DELETE)    &mkp MB5        &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none
+        &kp LC(BACKSPACE)  &kp BACKSPACE   &kp UP     &kp DELETE  &kp LC(DELETE)    &mkp MB5        &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans
         &kp LEFT_CONTROL   &kp LEFT_ARROW  &kp DOWN   &kp RIGHT   &kp PAGE_UP       &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
 &trans  &none              &kp HOME        &kp ENTER  &kp END     &kp PAGE_DOWN     &mkp MB4        &msc SCRL_UP    &mkp MCLK       &msc SCRL_DOWN   &none            &trans
                                            &trans     &trans      &trans            &kp LEFT_SHIFT  &mkp LCLK       &mkp RCLK
