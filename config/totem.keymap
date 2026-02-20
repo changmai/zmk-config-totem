@@ -186,7 +186,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
         };
@@ -209,7 +209,7 @@
 
         base {
             bindings = <
-                &tap_preferred LS(Q) Q         &tap_preferred LS(W) W     &tap_preferred LS(E) E         &tap_preferred LS(R) R     &tap_preferred LS(T) T     &kp Y                          &kp U                      &kp I                          &tap_preferred LS(O) O     &tap_preferred LS(P) P
+                &kp Q                          &kp W                      &kp A                          &kp R                      &kp T                      &kp Y                          &kp U                      &kp I                          &kp O                      &kp P
                 &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_GUI S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_ALT F  &kp G                      &kp H                          &tap_preferred LEFT_ALT J  &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_GUI L  &tap_preferred_mo 3 SEMICOLON
 &kp LEFT_SHIFT  &kp Z                          &kp X                      &kp C                          &kp V                      &kp B                      &kp N                          &kp M                      &kp COMMA                      &kp DOT                    &tap_preferred_mo 2 SLASH      &kp RIGHT_SHIFT
                                                                           &tap_preferred_mo 6 GRAVE      &mo 1                      &tap_preferred_mo 2 TAB    &tap_preferred_mo 2 BACKSPACE  &kp SPACE                  &tap_preferred_mo 4 SQT
