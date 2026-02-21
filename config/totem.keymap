@@ -218,10 +218,10 @@
 
         sym_num {
             bindings = <
-        &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PIPE         &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-        &kp PERCENT      &kp CARET    &kp AMPERSAND  &kp QUESTION  &kp BACKSLASH    &kp SLASH      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&trans  &none            &none        &kp ENTER      &kp TILDE     &kp UNDER        &kp EQUAL      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp PERIOD
-                                      &trans         &trans        &trans           &kp BACKSPACE  &trans        &kp NUMBER_0
+        &kp EXCLAMATION    &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PIPE         &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+        &kp PERCENT        &kp CARET    &kp AMPERSAND  &kp QUESTION  &kp BACKSLASH    &kp SLASH      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&trans  &kp LC(LA(LS(R)))  &none        &kp ENTER      &kp TILDE     &kp UNDER        &kp EQUAL      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp PERIOD
+                                        &trans         &trans        &trans           &kp BACKSPACE  &trans        &kp NUMBER_0
             >;
         };
 
@@ -261,21 +261,12 @@
             >;
         };
 
-        game {
+        layer_8 {
             bindings = <
-       &none  &none  &none  &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-       &none  &none  &none  &none  &to 7    &none         &none         &none         &none         &none
-&none  &none  &none  &none  &none  &none    &none         &none         &none         &none         &none         &bt BT_CLR
-                     &none  &none  &none    &none         &none         &none
-            >;
-        };
-
-        game_enter {
-            bindings = <
-       &none           &kp Q  &kp W  &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
-       &kp LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
-&to 0  &kp Z           &kp X  &kp C  &kp V  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp I  &none  &kp SPACE    &none   &none   &none
+       &kp LA(F4)         &kp LC(W)         &kp C_BRI_DN       &kp C_BRI_UP     &kp LA(LC(T))       &none  &none  &none  &none  &none
+       &kp RG(LS(S))      &kp K_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &none  &none  &none  &none  &none
+&none  &kp LA(LC(LS(R)))  &kp LA(UP_ARROW)  &kp LA(LEFT)       &kp LA(RIGHT)    &none               &none  &none  &none  &none  &none  &none
+                                            &none              &none            &none               &none  &none  &none
             >;
         };
     };
