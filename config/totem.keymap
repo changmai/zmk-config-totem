@@ -239,19 +239,19 @@
 
         base {
             bindings = <
-                &kp Q                          &kp W                      &kp E                          &kp R                      &kp T                      &kp Y                          &kp U                      &kp I                          &kp O                      &kp P
-                &tap_preferred LEFT_CONTROL A  &tap_preferred LEFT_GUI S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_ALT F  &kp G                      &kp H                          &tap_preferred LEFT_ALT J  &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_GUI L  &tap_preferred_mo 3 SEMICOLON
-&kp LEFT_SHIFT  &kp Z                          &kp X                      &kp C                          &kp V                      &kp B                      &kp N                          &kp M                      &kp COMMA                      &kp DOT                    &tap_preferred_mo 2 SLASH      &kp RIGHT_SHIFT
-                                                                          &tap_preferred_mo 6 GRAVE      &mo 1                      &tap_preferred_mo 2 TAB    &tap_preferred_mo 2 BACKSPACE  &kp SPACE                  &tap_preferred_mo 4 SQT
+                &kp Q                  &kp W                      &kp E                          &kp R                      &kp T                      &kp Y          &kp U                      &kp I                          &kp O                      &kp P
+                &tap_preferred_mo 4 A  &tap_preferred LEFT_GUI S  &tap_preferred LEFT_CONTROL D  &tap_preferred LEFT_ALT F  &kp G                      &kp H          &tap_preferred LEFT_ALT J  &tap_preferred LEFT_CONTROL K  &tap_preferred LEFT_GUI L  &tap_preferred_mo 3 SEMICOLON
+&kp LEFT_SHIFT  &kp Z                  &kp X                      &kp C                          &kp V                      &kp B                      &kp N          &kp M                      &kp COMMA                      &kp DOT                    &tap_preferred_mo 2 SLASH      &kp RIGHT_SHIFT
+                                                                  &tap_preferred_mo 6 GRAVE      &mo 1                      &tap_preferred_mo 2 TAB    &kp BACKSPACE  &kp SPACE                  &tap_preferred_mo 4 SQT
             >;
         };
 
         sym_num {
             bindings = <
-        &kp EXCLAMATION    &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PIPE         &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-        &kp PERCENT        &kp CARET    &kp AMPERSAND  &kp QUESTION  &kp BACKSLASH    &kp SLASH      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
-&trans  &kp LC(LA(LS(R)))  &none        &kp ENTER      &kp TILDE     &kp UNDER        &kp EQUAL      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp PERIOD
-                                        &trans         &trans        &trans           &kp BACKSPACE  &trans        &kp NUMBER_0
+        &kp EXCLAMATION   &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PERCENT      &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+        &kp LEFT_CONTROL  &kp CARET    &kp AMPERSAND  &kp QUESTION  &kp BACKSLASH    &kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS
+&trans  &none             &kp PIPE     &kp ENTER      &kp TILDE     &kp UNDER        &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp PERIOD
+                                       &trans         &trans        &trans           &trans        &trans        &kp NUMBER_0
             >;
         };
 
@@ -275,10 +275,10 @@
 
         func {
             bindings = <
-        &kp LA(F4)  &kp LC(W)     &kp LG(UP_ARROW)    &trans         &trans    &kp F12  &kp F7  &kp F8  &kp F9  &trans
-        &trans      &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &trans    &kp F11  &kp F4  &kp F5  &kp F6  &trans
-&trans  &trans      &trans        &trans              &trans         &trans    &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans
-                                  &trans              &trans         &trans    &trans   &trans  &trans
+        &trans  &kp F7  &kp F8  &kp F9  &kp F12    &kp F12  &kp F7  &kp F8  &kp F9  &trans
+        &trans  &kp F4  &kp F5  &kp F6  &kp F11    &kp F11  &kp F4  &kp F5  &kp F6  &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10    &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans
+                        &trans  &trans  &trans     &trans   &trans  &trans
             >;
         };
 
@@ -291,7 +291,7 @@
             >;
         };
 
-        layer_8 {
+        multifunc {
             bindings = <
        &kp LA(F4)         &kp LC(W)         &kp C_BRI_DN       &kp C_BRI_UP     &kp LA(LC(T))       &none  &none  &none  &none  &none
        &kp RG(LS(S))      &kp K_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &none  &none  &none  &none  &none
@@ -307,6 +307,11 @@
         device {
             if-layers = <1 2>;
             then-layer = <5>;
+        };
+
+        func {
+            if-layers = <6 1>;
+            then-layer = <4>;
         };
     };
 };
