@@ -309,8 +309,8 @@
             then-layer = <5>;
         };
 
-        func {
-            if-layers = <6 1>;
+        ff {
+            if-layers = <1 6>;
             then-layer = <4>;
         };
     };
