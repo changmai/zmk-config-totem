@@ -228,9 +228,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <0>;
         };
     };
 
